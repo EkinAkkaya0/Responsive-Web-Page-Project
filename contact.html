@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a href="index.html">Homepage</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <!--Main includes contact information-->
+    <div class="main">
+        <h1>Contact</h1>
+        <hr>
+
+        <div>
+            <div class="contact">
+                  <h3>E-mail</h3>
+                  <a href="mailto:info@unifebbilecik.com">info@unifebbilecik.com</a><br>
+ 
+            </div>
+            <div class="contact">
+                  <h3>Phone</h3>
+                  <a href="tel:+904441255"> 444 12 55</a>
+            </div>
+            <div class="contact">
+                  <h3>Address</h3>
+                  <a href="https://goo.gl/maps/RMepEtGSpLmkq6JU9"> Pelitözü Mah. Fatih Sultan Mehmet Bulvarı No:27, 11230 Bilecik Merkez/Bilecik</a>
+            </div>
+        </div>
+        <div class="contactform">
+            <form action="action_page.php">
+          
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="birthday">Birthday</label>
+                <input type="text" name="birthday" id="birthday">
+                
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" required>
+
+                <label for="fname">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Your E-mail.. Enter a valid email.." required>
+                
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                
+                <p>Remaining character:</p>
+                <p class="remaining-char"></p>
+                
+                <input type="submit" value="Submit">
+                <br></br>
+            </form>
+          </div>
+      </div>
+      <!--Footer-->
+      <footer>
+        <br>
+        <img class="navbar_img" src="images/amblem.png" alt="event">
+        <p>© 2022 - UNIFEB Bilecik | All rights reserved.</p>
+        <br>
+    </footer>
+
+
+    <script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>
